@@ -1,3 +1,7 @@
+
+package edu.utdallas.blockingFIFO;
+
+
 public class BlockingFIFO<T> {
     private final T[] elements;
     private final int capacity;
@@ -5,7 +9,8 @@ public class BlockingFIFO<T> {
     private int tail;
     private final Object lock;
 
-    public BlockingFIFO(int capacity) {
+    @SuppressWarnings("unchecked")
+	public BlockingFIFO(int capacity) {
         this.capacity = capacity;
         this.elements = (T[]) new Object[capacity];
         this.head = 0;
