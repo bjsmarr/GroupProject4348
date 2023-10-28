@@ -4,6 +4,8 @@ import edu.utdallas.taskExecutor.Task;
 
 import edu.utdallas.taskExecutor.TaskExecutor;
 
+import edu.utdallas.blockingFIFO.*;
+
 public class TaskExecutorImpl implements TaskExecutor
 {
 
